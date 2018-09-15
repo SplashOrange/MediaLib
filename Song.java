@@ -19,5 +19,6 @@ public class Song
         x = 0;
         title = "";
         System.out.println("This is my song");
+        System.out.println("Isn't this exciting");
     }
 }

@@ -18,5 +18,6 @@ public class Song
         // initialise instance variables
         x = 0;
         title = "";
+        System.out.println("This is my song");
     }
 }

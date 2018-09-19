@@ -8,7 +8,7 @@
 public class Song
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private int rating;
     private String title;
     /**
      * Constructor for objects of class Song
@@ -16,7 +16,7 @@ public class Song
     public Song()
     {
         // initialise instance variables
-        x = 0;
+        rating = 0;
         title = "";
         }
     public String getTitle() {
@@ -25,5 +25,10 @@ public class Song
     public void setTitle(String t) {
         title = t;
     }
+    public void setRating(int r) {
+        rating = r;
+    }   
+    public int getRating() {
+        return rating;
     }
-
+}

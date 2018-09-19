@@ -12,5 +12,7 @@ public class MediaLib
         System.out.println("Welcome to your Media Library");
         Song song1 = new Song();
         System.out.println(song1);
+        song1.setTitle("Sweetener");  
+        System.out.println(song1.getTitle());
     }
 }

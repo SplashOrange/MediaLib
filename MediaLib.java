@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class MediaLib here.
+ * A (small) list of my favorite songs, movies, & books w/ some added info on each.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Hannah Johnson
+ * @version 1.0  9/14/18
  */
 public class MediaLib
 {

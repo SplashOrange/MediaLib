@@ -26,19 +26,19 @@ public class Song
     public void setTitle(String t) {
         title = t;
     }
-        public String getTitle() {
+       public String getTitle() {
         return title;
     }
     public void setRating(int r) {
         rating = r;
     }   
-        public int getRating() {
+       public int getRating() {
         return rating;
     }
     public void setArtist(String a) {
         artist = a;
     }
-        public String getArtist() {
+       public String getArtist() {
         return artist;
     }
     public void setAlbum(String al) {

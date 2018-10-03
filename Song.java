@@ -12,6 +12,8 @@ public class Song
     private String title;
     private String artist;
     private String album;
+    private double price;
+    private boolean favorite;
     /**
      * Constructor for objects of class Song
      */
@@ -22,6 +24,7 @@ public class Song
         title = "";
         artist = "";
         album = "";
+        price = 0.0;
         }
     public void setTitle(String t) {
         title = t;
@@ -44,7 +47,13 @@ public class Song
     public void setAlbum(String al) {
         album = al;
     }
-    public String getAlbum() {
+        public String getAlbum() {
         return album;
+    }
+    public void setPrice(double p) {
+        price = p;
+    }
+        public double getPrice() {
+            return price;
     }
 }

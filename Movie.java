@@ -11,6 +11,7 @@ public class Movie
     private int rating;
     private String title;
     private String year;
+    private double price;
     /**
      * Constructor for objects of class Movie
      */
@@ -20,6 +21,7 @@ public class Movie
         rating = 0;
         title = "";
         year = "";
+        price = 0.0;
         }
     public String getTitle() {
         return title;
@@ -38,5 +40,11 @@ public class Movie
     }
     public void setYear(String y) {
         year = y;
+    }
+    public void setPrice(double p) {
+        price = p;
+    }
+    public double getPrice() {
+        return price;
     }
 }

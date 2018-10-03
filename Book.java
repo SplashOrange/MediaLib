@@ -12,6 +12,7 @@ public class Book
     private String title;
     private String author;
     private String year;
+    private double price;
     /**
      * Constructor for objects of class Book
      */
@@ -22,6 +23,7 @@ public class Book
         title = "";
         author = "";
         year = "";
+        price = 0.0;
         }
     public String getTitle() {
         return title;
@@ -46,5 +48,11 @@ public class Book
     }
     public void setYear(String y) {
         year = y;
+    }
+    public void setPrice(double p) {
+        price = p;
+    }
+    public double getPrice() {
+        return price;
     }
 }

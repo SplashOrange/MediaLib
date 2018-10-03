@@ -27,6 +27,8 @@ public class MediaLib
         System.out.println(song1.getAlbum());
         song1.setRating(9);  
         System.out.println("        Your rating: "+song1.getRating());
+        song1.setPrice(1.29);
+        System.out.println("        Price: $"+song1.getPrice());
         
         System.out.println("");
         
@@ -39,6 +41,8 @@ public class MediaLib
         System.out.println(song2.getAlbum());
         song2.setRating(9);
         System.out.println("        Your rating: "+song2.getRating());
+        song2.setPrice(1.29);
+        System.out.println("        Price: $"+song2.getPrice());
         
         System.out.println("");
         
@@ -51,6 +55,8 @@ public class MediaLib
         System.out.println(song3.getAlbum());
         song3.setRating(8);
         System.out.println("        Your rating: "+song3.getRating());
+        song3.setPrice(1.29);
+        System.out.println("        Price: $"+song3.getPrice());
         
         System.out.println("");
         
@@ -63,6 +69,8 @@ public class MediaLib
         System.out.println(song4.getAlbum());
         song4.setRating(7);
         System.out.println("        Your rating: "+song4.getRating());
+        song4.setPrice(1.29);
+        System.out.println("        Price: $"+song4.getPrice());
         
         
         System.out.println(" ");
@@ -78,6 +86,8 @@ public class MediaLib
         System.out.println(movie1.getYear());
         movie1.setRating(10);
         System.out.println("        Your rating: "+movie1.getRating());
+        movie1.setPrice(1.29);
+        System.out.println("        Price: $"+movie1.getPrice());
         
         System.out.println(" ");
         
@@ -88,6 +98,8 @@ public class MediaLib
         System.out.println(movie2.getYear());
         movie2.setRating(10);
         System.out.println("        Your rating: "+movie2.getRating());
+        movie2.setPrice(1.29);
+        System.out.println("        Price: $"+movie2.getPrice());
         
         
         System.out.println(" ");
@@ -105,6 +117,8 @@ public class MediaLib
         System.out.println(book1.getYear());
         book1.setRating(10);
         System.out.println("        Your rating: "+book1.getRating());
+        book1.setPrice(1.29);
+        System.out.println("        Price: $"+book1.getPrice());
         
         System.out.println("");
         
@@ -117,6 +131,8 @@ public class MediaLib
         System.out.println(book2.getYear());
         book2.setRating(10);
         System.out.println("        Your rating: "+book2.getRating());
+        book2.setPrice(1.29);
+        System.out.println("        Price: $"+book2.getPrice());
         
     }
 }

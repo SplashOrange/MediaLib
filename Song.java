@@ -25,35 +25,44 @@ public class Song
         artist = "";
         album = "";
         price = 0.0;
+        favorite = true;
         }
+    public Song(String title, double price) {
+        this.title = title;
+        this.price = price;
+        this.rating = rating;
+    }
     public void setTitle(String t) {
         title = t;
     }
-       public String getTitle() {
+        public String getTitle() {
         return title;
-    }
+       }
     public void setRating(int r) {
         rating = r;
     }   
-       public int getRating() {
+        public int getRating() {
         return rating;
-    }
+       }
     public void setArtist(String a) {
         artist = a;
     }
-       public String getArtist() {
+        public String getArtist() {
         return artist;
-    }
+       }
     public void setAlbum(String al) {
         album = al;
     }
-        public String getAlbum() {
-        return album;
-    }
-    public void setPrice(double p) {
+         public String getAlbum() {
+         return album;
+        }
+        public void setPrice(double p) {
         price = p;
     }
         public double getPrice() {
-            return price;
-    }
+        return price;
+       }
+    public void addToFavorites() {
+    favorite = true;
+   }
 }

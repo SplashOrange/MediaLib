@@ -6,7 +6,7 @@
  * @version 1.0  9/14/18
  */
 public class MediaLib
-{
+{ 
    public static void main()
     {
         System.out.println("Welcome to your Media Library!");

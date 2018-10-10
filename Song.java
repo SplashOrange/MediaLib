@@ -14,6 +14,8 @@ public class Song
     private String album;
     private double price;
     private boolean favorite;
+    private double totalCost;
+    private int numSongs;
     /**
      * Constructor for objects of class Song
      */
@@ -26,6 +28,8 @@ public class Song
         album = "";
         price = 0.0;
         favorite = true;
+        totalCost = 0.0;
+        numSongs = 0;
         }
     public Song(String title, double price) {
         this.title = title;
@@ -35,28 +39,28 @@ public class Song
     public void setTitle(String t) {
         title = t;
     }
-        public String getTitle() {
+       public String getTitle() {
         return title;
        }
     public void setRating(int r) {
         rating = r;
     }   
-        public int getRating() {
+       public int getRating() {
         return rating;
        }
     public void setArtist(String a) {
         artist = a;
     }
-        public String getArtist() {
+       public String getArtist() {
         return artist;
        }
     public void setAlbum(String al) {
         album = al;
     }
-         public String getAlbum() {
+        public String getAlbum() {
          return album;
         }
-        public void setPrice(double p) {
+    public void setPrice(double p) {
         price = p;
     }
         public double getPrice() {
@@ -64,5 +68,5 @@ public class Song
        }
     public void addToFavorites() {
     favorite = true;
-   }
+    }
 }

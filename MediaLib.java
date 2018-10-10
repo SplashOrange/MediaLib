@@ -72,6 +72,48 @@ public class MediaLib
         song4.setPrice(1.29);
         System.out.println("        Price: $"+song4.getPrice());
         
+        System.out.println("");
+        
+        Song song5 = new Song();
+        song5.setTitle("    Baby Don't Talk");
+        System.out.println(song5.getTitle());
+        song5.setArtist("   Artist: LÉON");
+        System.out.println(song5.getArtist());
+        song5.setAlbum("    Album: Baby Don't Talk - Single");
+        System.out.println(song5.getAlbum());
+        song5.setRating(6);
+        System.out.println("        Your rating: "+song5.getRating());
+        song5.setPrice(1.29);
+        System.out.println("        Price: $"+song5.getPrice());
+        
+        System.out.println("");
+        
+        Song song6 = new Song();
+        song6.setTitle("    Just My Type");
+        System.out.println(song6.getTitle());
+        song6.setArtist("   Artist: The Vamps");
+        System.out.println(song6.getArtist());
+        song6.setAlbum("    Album: Night & Day (Day Edition)");
+        System.out.println(song6.getAlbum());
+        song6.setRating(7);
+        System.out.println("        Your rating: "+song6.getRating());
+        song6.setPrice(1.29);
+        System.out.println("        Price: $"+song6.getPrice());
+        
+        System.out.println("");
+        
+        Song song7 = new Song();
+        song7.setTitle("    Darling");
+        System.out.println(song7.getTitle());
+        song7.setArtist("   Artist: KNIA");
+        System.out.println(song7.getArtist());
+        song7.setAlbum("    Album: untitled");
+        System.out.println(song7.getAlbum());
+        song7.setRating(10);
+        System.out.println("        Your rating: "+song7.getRating());
+        song7.setPrice(0.99);
+        System.out.println("        Price: $"+song7.getPrice());
+        
         
         System.out.println(" ");
         System.out.println(" ");

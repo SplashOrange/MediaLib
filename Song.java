@@ -64,9 +64,10 @@ public class Song
         price = p;
     }
         public double getPrice() {
-        return price;
+         return price;
        }
     public void addToFavorites() {
-    favorite = true;
+     favorite = true;
     }
+        
 }

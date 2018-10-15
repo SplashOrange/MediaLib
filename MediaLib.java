@@ -175,6 +175,8 @@ public class MediaLib
         System.out.println("        Your rating: "+book2.getRating());
         book2.setPrice(1.29);
         System.out.println("        Price: $"+book2.getPrice());
+     
         
+
+   }
     }
-}

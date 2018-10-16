@@ -176,7 +176,7 @@ public class MediaLib
         book2.setPrice(1.29);
         System.out.println("        Price: $"+book2.getPrice());
      
-        
-
+        Song 
+        System.out.println(numSongs);
    }
     }

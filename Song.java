@@ -35,6 +35,7 @@ public class Song
         this.title = title;
         this.price = price;
         this.rating = rating;
+        numSongs = numSongs + 1;
     }
     public void setTitle(String t) {
         title = t;

@@ -7,8 +7,8 @@
  */
 public class MediaLib
 { 
-   public static void main()
-    {
+    public static void main() 
+    {   
         System.out.println("Welcome to your Media Library!");
         
         
@@ -17,7 +17,9 @@ public class MediaLib
         
         
         System.out.println("Your Music:");
+        
         System.out.println(" ");
+        
         Song song1 = new Song();
         song1.setTitle("   R.E.M.");  
         System.out.println(song1.getTitle());
@@ -114,6 +116,11 @@ public class MediaLib
         song7.setPrice(0.99);
         System.out.println("        Price: $"+song7.getPrice());
         
+        System.out.println(" ");
+        
+        int numSongs = Song.getNumSongs();
+        System.out.println("Total number of songs: "+Song.getNumSongs());
+        
         
         System.out.println(" ");
         System.out.println(" ");
@@ -175,8 +182,9 @@ public class MediaLib
         System.out.println("        Your rating: "+book2.getRating());
         book2.setPrice(1.29);
         System.out.println("        Price: $"+book2.getPrice());
-     
-        Song 
-        System.out.println(numSongs);
+        
+        System.out.println("");
+        
+
    }
-    }
+}

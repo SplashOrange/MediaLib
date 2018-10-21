@@ -15,7 +15,7 @@ public class Song
     private double price;
     private boolean favorite;
     private double totalCost;
-    private int numSongs;
+    public static int numSongs;
     /**
      * Constructor for objects of class Song
      */
@@ -70,5 +70,7 @@ public class Song
     public void addToFavorites() {
      favorite = true;
     }
-        
+        public static int getNumSongs() {
+            return numSongs;
+        }
 }

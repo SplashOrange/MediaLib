@@ -32,6 +32,7 @@ public class MediaLib
         song1.setPrice(1.29);
         System.out.println("        Price: $"+song1.getPrice());
         
+        
         System.out.println("");
         
         Song song2 = new Song();
@@ -118,7 +119,6 @@ public class MediaLib
         
         System.out.println(" ");
         
-        int numSongs = Song.getNumSongs();
         System.out.println("Total number of songs: "+Song.getNumSongs());
         
         

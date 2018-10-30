@@ -30,6 +30,7 @@ public class Song
         favorite = true;
         totalCost = 0.0;
         numSongs = 0;
+        totalCost = 0.0;
         }
     public Song(String title, double price) {
         this.title = title;
@@ -72,5 +73,11 @@ public class Song
     }
         public static int getNumSongs() {
             return numSongs;
+        }
+    public void setTotalCost(double c) {
+        totalCost = c;
+    }
+        public double getTotalCost() {
+            return totalCost;
         }
 }

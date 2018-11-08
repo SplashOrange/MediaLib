@@ -116,6 +116,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song7.getRating());
         song7.setPrice(0.99);
         System.out.println("        Price: $"+song7.getPrice());
+        Song.numSongs = Song.numSongs + 1;
+
         
         System.out.println(" ");
         
@@ -184,7 +186,11 @@ public class MediaLib
         System.out.println("        Price: $"+book2.getPrice());
         
         System.out.println("");
-        
 
-   }
+        //for (int i = 1; i < 5; i++) {
+       
+          //  System.out.println();
+
+        //}
+    }
 }

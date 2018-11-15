@@ -8,6 +8,7 @@ dependency2.type=UsesDependency
 dependency3.from=MediaLib
 dependency3.to=Book
 dependency3.type=UsesDependency
+<<<<<<< HEAD
 editor.fx.0.height=739
 editor.fx.0.width=816
 editor.fx.0.x=552
@@ -17,6 +18,27 @@ objectbench.width=751
 package.divider.horizontal=0.6
 package.divider.vertical=0.7650375939849624
 package.editor.height=400
+=======
+editor.fx.0.height=716
+editor.fx.0.width=866
+<<<<<<< HEAD
+editor.fx.0.x=414
+editor.fx.0.y=23
+objectbench.height=149
+objectbench.width=751
+package.divider.horizontal=0.6
+package.divider.vertical=0.706766917293233
+package.editor.height=369
+=======
+editor.fx.0.x=434
+editor.fx.0.y=89
+objectbench.height=131
+objectbench.width=751
+package.divider.horizontal=0.6
+package.divider.vertical=0.7406015037593985
+package.editor.height=387
+>>>>>>> 475f276b0691b5b25513814ce34cfce292353ca9
+>>>>>>> 5383c9d0bacb5ae9a0bef6cf5340914fb42a85cd
 package.editor.width=661
 package.editor.x=80
 package.editor.y=105

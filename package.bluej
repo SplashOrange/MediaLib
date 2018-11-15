@@ -10,6 +10,7 @@ dependency3.to=Book
 dependency3.type=UsesDependency
 editor.fx.0.height=716
 editor.fx.0.width=866
+<<<<<<< HEAD
 editor.fx.0.x=414
 editor.fx.0.y=23
 objectbench.height=149
@@ -17,6 +18,15 @@ objectbench.width=751
 package.divider.horizontal=0.6
 package.divider.vertical=0.706766917293233
 package.editor.height=369
+=======
+editor.fx.0.x=434
+editor.fx.0.y=89
+objectbench.height=131
+objectbench.width=751
+package.divider.horizontal=0.6
+package.divider.vertical=0.7406015037593985
+package.editor.height=387
+>>>>>>> 475f276b0691b5b25513814ce34cfce292353ca9
 package.editor.width=661
 package.editor.x=80
 package.editor.y=105

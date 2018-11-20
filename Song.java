@@ -38,7 +38,6 @@ public class Song
         Song.numSongs += Song.numSongs;
         totalCost = totalCost + price;
     }
-    
     // get & set strings (acsessors & mutators)
     public void setTitle(String t) {
         title = t;

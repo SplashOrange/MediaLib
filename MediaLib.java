@@ -7,6 +7,8 @@
  */
 public class MediaLib
 { 
+    public static int count;
+    public int newInst;
     public static void main() 
     {   
         System.out.println("Welcome to your Media Library!");
@@ -118,13 +120,16 @@ public class MediaLib
         System.out.println("        Price: $"+song7.getPrice());
         
         System.out.println(" ");
+
         
         for (int numSongs = 1; numSongs < 8; numSongs++) {
        
-            System.out.println("Total number of songs in your library: " + numSongs);
+            count = numSongs;
 
         }
-
+        System.out.println(" ");
+        
+        System.out.println("Total number of songs in your library: " + count);
         
         
         

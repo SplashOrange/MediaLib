@@ -12,10 +12,11 @@ public class Song
     private String title;
     private String artist;
     private String album;
-    private double price;
+    public static double price;
     private boolean favorite;
-    public double totalCost;
+    public static double totalCost;
     public static int numSongs;
+    public static int objectNum;
     /**
      * Constructor for objects of class Song
      */
@@ -29,22 +30,23 @@ public class Song
         price = 0.0;
         favorite = true;
         Song.numSongs += Song.numSongs;
-        totalCost = totalCost + price;
+        totalCost = price;
+        objectNum++; 
         }
     public Song(String title, double price) {
         this.title = title;
         this.price = price;
         this.rating = rating;
         Song.numSongs += Song.numSongs;
-        totalCost = totalCost + price;
+        totalCost = price;
     }
     // get & set strings (acsessors & mutators)
     public void setTitle(String t) {
         title = t;
     }
-    public String getTitle() {
+       public String getTitle() {
         return title;
-    }
+       }
     public void setRating(int r) {
         rating = r;
     }   
@@ -63,22 +65,23 @@ public class Song
         public String getAlbum() {
          return album;
         }
-    public void setPrice(double p) {
+    public static void setPrice(double p) {
         price = p;
     }
-        public double getPrice() {
+        public static double getPrice() {
          return price;
        }
     public void addToFavorites() {
-     favorite = true;
+        favorite = true;
     }
         public static int getNumSongs() {
             return numSongs;
         }
-    public void setTotalCost(double c) {
-        totalCost = c;
+    public static double getTotalCost() {
+        return totalCost;
     }
-        public double getTotalCost() {
-            return totalCost;
-        }
+       public static int getObjectNum(){
+        return objectNum;    
+       }
+        
 }

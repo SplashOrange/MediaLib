@@ -30,7 +30,7 @@ public class Song
         price = 0.0;
         favorite = true;
         Song.numSongs += Song.numSongs;
-        totalCost = price;
+        totalCost = 0.0;
         objectNum++; 
         }
     public Song(String title, double price) {
@@ -38,7 +38,7 @@ public class Song
         this.price = price;
         this.rating = rating;
         Song.numSongs += Song.numSongs;
-        totalCost = price;
+        totalCost = 0.0;
     }
     // get & set strings (acsessors & mutators)
     public void setTitle(String t) {
@@ -80,8 +80,7 @@ public class Song
     public static double getTotalCost() {
         return totalCost;
     }
-       public static int getObjectNum(){
+       public static double getObjectNum(){
         return objectNum;    
-       }
-        
+       }    
 }

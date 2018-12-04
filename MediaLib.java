@@ -136,7 +136,7 @@ public class MediaLib
         
         System.out.println(" ");
 
-        int instanceCount = Song.getObjectNum();
+        double instanceCount = Song.getObjectNum();
         
         for (int numSongs = 1; numSongs < instanceCount+1; numSongs++) {
        
@@ -148,7 +148,7 @@ public class MediaLib
         System.out.println("Total number of songs in your library: " + count);
         
         System.out.println(" ");
-        
+
         System.out.println("You've bought $" + Song.getTotalCost() + " worth of music");
         
         

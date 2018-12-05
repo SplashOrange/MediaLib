@@ -14,7 +14,7 @@ public class Song
     private String album;
     public static double price;
     private boolean favorite;
-    public static double totalCost;
+    //public static double totalCost;
     public static int numSongs;
     public static int objectNum;
     /**
@@ -30,7 +30,7 @@ public class Song
         price = 0.0;
         favorite = true;
         Song.numSongs += Song.numSongs;
-        totalCost = 0.0;
+        MediaLib.totalCost += this.price;
         objectNum++; 
         }
     public Song(String title, double price) {
@@ -38,7 +38,7 @@ public class Song
         this.price = price;
         this.rating = rating;
         Song.numSongs += Song.numSongs;
-        totalCost = 0.0;
+        MediaLib.totalCost += this.price;
     }
     // get & set strings (acsessors & mutators)
     public void setTitle(String t) {
@@ -78,9 +78,9 @@ public class Song
             return numSongs;
         }
     public static double getTotalCost() {
-        return totalCost;
+        return MediaLib.totalCost;
     }
-       public static double getObjectNum(){
+       public static int getObjectNum(){
         return objectNum;    
        }    
 }

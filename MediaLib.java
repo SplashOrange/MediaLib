@@ -9,6 +9,7 @@ public class MediaLib
 { 
     public static int count;
     public int newInst;
+    public static double totalCost = 0.0;
     public static void main() 
     {   
         System.out.println("Welcome to your Media Library!");
@@ -136,7 +137,7 @@ public class MediaLib
         
         System.out.println(" ");
 
-        double instanceCount = Song.getObjectNum();
+        int instanceCount = Song.getObjectNum();
         
         for (int numSongs = 1; numSongs < instanceCount+1; numSongs++) {
        
@@ -149,7 +150,8 @@ public class MediaLib
         
         System.out.println(" ");
 
-        System.out.println("You've bought $" + Song.getTotalCost() + " worth of music");
+        System.out.println("You've bought $" + totalCost + " worth of music");
+        System.out.println(Song.price);
         
         
         System.out.println(" ");

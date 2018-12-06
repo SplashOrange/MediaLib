@@ -10,6 +10,7 @@ public class MediaLib
     public static int count;
     public int newInst;
     public static double totalCost = 0.0;
+    public static int totalRatings = 0;
     public static void main() 
     {   
         System.out.println("Welcome to your Media Library!");
@@ -34,7 +35,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song1.getRating());
         song1.setPrice(1.29);
         System.out.println("        Price: $"+song1.getPrice());
-        
+        totalCost = totalCost + song1.price;
+        totalRatings = totalRatings + song1.rating;
         
         System.out.println("");
         
@@ -49,6 +51,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song2.getRating());
         song2.setPrice(1.29);
         System.out.println("        Price: $"+song2.getPrice());
+        totalCost = totalCost + song2.price;
+        totalRatings = totalRatings + song2.rating;
         
         System.out.println("");
         
@@ -63,6 +67,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song3.getRating());
         song3.setPrice(1.29);
         System.out.println("        Price: $"+song3.getPrice());
+        totalCost = totalCost + song3.price;
+        totalRatings = totalRatings + song3.rating;
         
         System.out.println("");
         
@@ -77,6 +83,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song4.getRating());
         song4.setPrice(1.29);
         System.out.println("        Price: $"+song4.getPrice());
+        totalCost = totalCost + song4.price;
+        totalRatings = totalRatings + song4.rating;
         
         System.out.println("");
         
@@ -91,6 +99,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song5.getRating());
         song5.setPrice(1.29);
         System.out.println("        Price: $"+song5.getPrice());
+        totalCost = totalCost + song5.price;
+        totalRatings = totalRatings + song5.rating;
         
         System.out.println("");
         
@@ -105,6 +115,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song6.getRating());
         song6.setPrice(1.29);
         System.out.println("        Price: $"+song6.getPrice());
+        totalCost = totalCost + song6.price;
+        totalRatings = totalRatings + song6.rating;
         
         System.out.println("");
         
@@ -119,6 +131,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song7.getRating());
         song7.setPrice(0.99);
         System.out.println("        Price: $"+song7.getPrice());
+        totalCost = totalCost + song7.price;
+        totalRatings = totalRatings + song7.rating;
         
         System.out.println(" ");
         
@@ -133,6 +147,8 @@ public class MediaLib
         System.out.println("        Your rating: "+song8.getRating());
         song8.setPrice(1.29);
         System.out.println("        Price: $"+song8.getPrice());
+        totalCost = totalCost + song8.price;
+        totalRatings = totalRatings + song8.rating;
         
         
         System.out.println(" ");
@@ -151,7 +167,12 @@ public class MediaLib
         System.out.println(" ");
 
         System.out.println("You've bought $" + totalCost + " worth of music");
-        System.out.println(Song.price);
+        
+        System.out.println(" ");
+        
+        int maxRatings = count * 10;
+        
+        System.out.println("Your total rating of all songs is " + totalRatings + " out of " + maxRatings); 
         
         
         System.out.println(" ");

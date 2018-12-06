@@ -8,13 +8,12 @@
 public class Song
 {
     // instance variables - replace the example below with your own
-    private int rating;
+    public static int rating;
     private String title;
     private String artist;
     private String album;
     public static double price;
     private boolean favorite;
-    //public static double totalCost;
     public static int numSongs;
     public static int objectNum;
     /**
@@ -30,7 +29,6 @@ public class Song
         price = 0.0;
         favorite = true;
         Song.numSongs += Song.numSongs;
-        MediaLib.totalCost += this.price;
         objectNum++; 
         }
     public Song(String title, double price) {
@@ -38,7 +36,6 @@ public class Song
         this.price = price;
         this.rating = rating;
         Song.numSongs += Song.numSongs;
-        MediaLib.totalCost += this.price;
     }
     // get & set strings (acsessors & mutators)
     public void setTitle(String t) {
@@ -77,10 +74,7 @@ public class Song
         public static int getNumSongs() {
             return numSongs;
         }
-    public static double getTotalCost() {
-        return MediaLib.totalCost;
-    }
-       public static int getObjectNum(){
+    public static int getObjectNum(){
         return objectNum;    
-       }    
+    }    
 }

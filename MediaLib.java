@@ -11,6 +11,8 @@ public class MediaLib
     public int newInst;
     public static double totalCost = 0.0;
     public static int totalRatings = 0;
+    public static double avgCost = 0.0;
+    public static double avgRating = 0;
     public static void main() 
     {   
         System.out.println("Welcome to your Media Library!");
@@ -150,6 +152,22 @@ public class MediaLib
         totalCost = totalCost + song8.price;
         totalRatings = totalRatings + song8.rating;
         
+        System.out.println(" ");
+        
+        Song song9 = new Song();
+        song9.setTitle("    Electric Love");
+        System.out.println(song9.getTitle());
+        song9.setArtist("   Artist: Børns");
+        System.out.println(song9.getArtist());
+        song9.setAlbum("    Album: Dopamine");
+        System.out.println(song9.getAlbum());
+        song9.setRating(8);
+        System.out.println("        Your rating: "+song9.getRating());
+        song9.setPrice(1.29);
+        System.out.println("        Price: $"+song9.getPrice());
+        totalCost = totalCost + song9.price;
+        totalRatings = totalRatings + song9.rating;
+        
         
         System.out.println(" ");
 
@@ -165,14 +183,19 @@ public class MediaLib
         System.out.println("Total number of songs in your library: " + count);
         
         System.out.println(" ");
+        
+        avgCost = totalCost / count;
 
         System.out.println("You've bought $" + totalCost + " worth of music");
+        System.out.println("The average cost of a song in your library is $" + avgCost);
         
         System.out.println(" ");
         
         int maxRatings = count * 10;
+        avgRating = totalRatings / count;
         
         System.out.println("Your total rating of all songs is " + totalRatings + " out of " + maxRatings); 
+        System.out.println("The average rating of a song in your library is " + avgRating + " out of 10");
         
         
         System.out.println(" ");
@@ -238,6 +261,5 @@ public class MediaLib
         
         System.out.println("");
         
-
     }
 }

@@ -213,6 +213,8 @@ public class MediaLib
         System.out.println("        Your rating: "+movie1.getRating());
         movie1.setPrice(1.29);
         System.out.println("        Price: $"+movie1.getPrice());
+        movie1.setDuration(106);
+        System.out.println("    Duration: " + movie1.duration + " minutes");
         
         System.out.println(" ");
         
@@ -225,6 +227,8 @@ public class MediaLib
         System.out.println("        Your rating: "+movie2.getRating());
         movie2.setPrice(1.29);
         System.out.println("        Price: $"+movie2.getPrice());
+        movie2.setDuration(127);
+        System.out.println("    Duration: " + movie2.duration + " minutes");
         
         
         System.out.println(" ");

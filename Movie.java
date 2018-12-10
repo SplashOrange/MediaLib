@@ -12,6 +12,7 @@ public class Movie
     private String title;
     private String year;
     private double price;
+    public static int duration;
     /**
      * Constructor for objects of class Movie
      */
@@ -46,5 +47,11 @@ public class Movie
     }
     public double getPrice() {
         return price;
+    }
+    public void setDuration(int d) {
+        duration = d;
+    }
+    public int getDuration() {
+        return duration;
     }
 }

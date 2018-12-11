@@ -10,7 +10,7 @@ public class MediaLib
     public static int count;
     public int newInst;
     public static double totalCost = 0.0;
-    public static int totalRatings = 0;
+    public static double totalRatings = 0;
     public static double avgCost = 0.0;
     public static double avgRating = 0;
     public static void main() 
@@ -168,6 +168,22 @@ public class MediaLib
         totalCost = totalCost + song9.price;
         totalRatings = totalRatings + song9.rating;
         
+        System.out.println(" ");
+        
+        Song song10 = new Song();
+        song10.setTitle("   come out and play");
+        System.out.println(song10.getTitle());
+        song10.setArtist("  Artist: Billie Eilish");
+        System.out.println(song10.getArtist());
+        song10.setAlbum("   Album: come out and play - Single");
+        System.out.println(song10.getAlbum());
+        song10.setRating(6);
+        System.out.println("        Your rating: " + song10.getRating());
+        song10.setPrice(1.29);
+        System.out.println("        Price: $" + song10.getPrice());
+        totalCost = totalCost + song10.price;
+        totalRatings = totalRatings + song10.rating;
+        
         
         System.out.println(" ");
 
@@ -186,15 +202,15 @@ public class MediaLib
         
         avgCost = totalCost / count;
 
-        System.out.println("You've bought $" + totalCost + " worth of music");
-        System.out.println("The average cost of a song in your library is $" + avgCost);
+        System.out.println("You've bought $" + String.format("%.2f", totalCost) + " worth of music");
+        System.out.println("The average cost of a song in your library is $" + String.format("%.2f", avgCost));
         
         System.out.println(" ");
         
         int maxRatings = count * 10;
         avgRating = totalRatings / count;
         
-        System.out.println("Your total rating of all songs is " + totalRatings + " out of " + maxRatings); 
+        System.out.println("Your total rating of all songs is " + (int)totalRatings + " out of " + maxRatings); 
         System.out.println("The average rating of a song in your library is " + avgRating + " out of 10");
         
         
